@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/roman/My/Coursera/C++_white_belt/1_week/min_string/main.cpp" "/home/roman/My/Coursera/C++_white_belt/1_week/min_string/cmake-build-debug/CMakeFiles/min_string.dir/main.cpp.o"
+  "/home/roman/My/Coursera/Coursera_Cpp/1_week/min_string/main.cpp" "/home/roman/My/Coursera/Coursera_Cpp/1_week/min_string/cmake-build-debug/CMakeFiles/min_string.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

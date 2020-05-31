@@ -64,10 +64,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roman/My/Coursera/C++_white_belt/1_week/min_string
+CMAKE_SOURCE_DIR = /home/roman/My/Coursera/Coursera_Cpp/1_week/min_string
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roman/My/Coursera/C++_white_belt/1_week/min_string/cmake-build-debug
+CMAKE_BINARY_DIR = /home/roman/My/Coursera/Coursera_Cpp/1_week/min_string/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -94,14 +94,14 @@ clean: CMakeFiles/min_string.dir/clean
 CMakeFiles/min_string.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/min_string.dir/build.make CMakeFiles/min_string.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/min_string.dir/build.make CMakeFiles/min_string.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/My/Coursera/C++_white_belt/1_week/min_string/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target min_string"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/My/Coursera/Coursera_Cpp/1_week/min_string/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target min_string"
 .PHONY : CMakeFiles/min_string.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/min_string.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/My/Coursera/C++_white_belt/1_week/min_string/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/My/Coursera/Coursera_Cpp/1_week/min_string/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/min_string.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/My/Coursera/C++_white_belt/1_week/min_string/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/My/Coursera/Coursera_Cpp/1_week/min_string/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/min_string.dir/rule
 
 # Convenience name for target.
