@@ -1,5 +1,5 @@
 # Coursera_Cpp
-Repository for C++ courses from MIPT and Yandex.
+Репозиторий для курсов по C++ от МФТИ совместно с Яндексом.
 
 ## Белый пояс
 1 неделя:
