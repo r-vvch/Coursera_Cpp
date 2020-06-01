@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/avg_temp.dir/main.cpp.o  -o avg_temp 
