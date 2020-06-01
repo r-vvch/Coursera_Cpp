@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/value.dir/main.cpp.o  -o value 
