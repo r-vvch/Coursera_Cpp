@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/roman/My/Coursera/Coursera_Cpp/2_week/functions/reverse_1/main.cpp
+iostream
+-
+vector
+-
+reverse.cpp
+/home/roman/My/Coursera/Coursera_Cpp/2_week/functions/reverse_1/reverse.cpp
+
+/home/roman/My/Coursera/Coursera_Cpp/2_week/functions/reverse_1/reverse.cpp
+vector
+-
+
