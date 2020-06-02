@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/month_deals.dir/main.cpp.o  -o month_deals 
