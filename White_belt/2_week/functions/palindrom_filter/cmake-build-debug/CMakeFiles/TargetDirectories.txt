@@ -1,0 +1,3 @@
+/home/roman/My/Coursera/Coursera_Cpp/2_week/functions/palindrom_filter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/roman/My/Coursera/Coursera_Cpp/2_week/functions/palindrom_filter/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/roman/My/Coursera/Coursera_Cpp/2_week/functions/palindrom_filter/cmake-build-debug/CMakeFiles/palindrom_filter.dir
