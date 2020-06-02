@@ -28,7 +28,7 @@
 - Контейнер map
     - Анаграммы - [anagrams](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/map/anagrams "Перейти к расположению")
     - Справочник столиц - [capital](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/map/capital "Перейти к расположению")
-    - Автобусные остановки 1 - [bus_stops_1]((https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/map/bus_stops_1 "Перейти к расположению")
+    - Автобусные остановки 1 - [bus_stops_1](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/map/bus_stops_1 "Перейти к расположению")
     - Автобусные остановки 2
 - Контейнер set
     - Количество уникальных строк

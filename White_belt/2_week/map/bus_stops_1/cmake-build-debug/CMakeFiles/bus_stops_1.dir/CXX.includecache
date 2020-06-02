@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/roman/My/Coursera/Coursera_Cpp/White_belt/2_week/map/bus_stops_1/main.cpp
+iostream
+-
+map
+-
+vector
+-
+algorithm
+-
+
