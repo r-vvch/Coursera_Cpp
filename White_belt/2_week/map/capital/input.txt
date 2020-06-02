@@ -1,0 +1,94 @@
+    INPUT:
+6
+CHANGE_CAPITAL RussianEmpire Petrograd
+RENAME RussianEmpire RussianRepublic
+ABOUT RussianRepublic
+RENAME RussianRepublic USSR
+CHANGE_CAPITAL USSR Moscow
+DUMP
+
+    OUTPUT:
+Introduce new country RussianEmpire with capital Petrograd
+Country RussianEmpire with capital Petrograd has been renamed to RussianRepublic
+Country RussianRepublic has capital Petrograd
+Country RussianRepublic with capital Petrograd has been renamed to USSR
+Country USSR has changed its capital from Petrograd to Moscow
+USSR/Moscow
+
+    INPUT:
+24
+RENAME FakeCountry FarFarAway
+ABOUT FarFarAway
+DUMP
+CHANGE_CAPITAL TsardomOfRussia Moscow
+CHANGE_CAPITAL TsardomOfRussia Moscow
+CHANGE_CAPITAL ColonialBrazil Salvador
+CHANGE_CAPITAL TsardomOfRussia SaintPetersburg
+RENAME TsardomOfRussia RussianEmpire
+CHANGE_CAPITAL RussianEmpire Moscow
+CHANGE_CAPITAL RussianEmpire SaintPetersburg
+CHANGE_CAPITAL ColonialBrazil RioDeJaneiro
+DUMP
+RENAME ColonialBrazil EmpireOfBrazil
+ABOUT RussianEmpire
+RENAME EmpireOfBrazil UnitedStatesOfBrazil
+CHANGE_CAPITAL RussianEmpire Petrograd
+RENAME RussianEmpire RussianRepublic
+RENAME RussianRepublic USSR
+CHANGE_CAPITAL USSR Moscow
+CHANGE_CAPITAL UnitedStatesOfBrazil Brasilia
+RENAME UnitedStatesOfBrazil FederativeRepublicOfBrazil
+ABOUT RussianEmpire
+DUMP
+RENAME USSR USSR
+
+    OUTPUT:
+Incorrect rename, skip
+Country FarFarAway doesn't exist
+There are no countries in the world
+Introduce new country TsardomOfRussia with capital Moscow
+Country TsardomOfRussia hasn't changed its capital
+Introduce new country ColonialBrazil with capital Salvador
+Country TsardomOfRussia has changed its capital from Moscow to SaintPetersburg
+Country TsardomOfRussia with capital SaintPetersburg has been renamed to RussianEmpire
+Country RussianEmpire has changed its capital from SaintPetersburg to Moscow
+Country RussianEmpire has changed its capital from Moscow to SaintPetersburg
+Country ColonialBrazil has changed its capital from Salvador to RioDeJaneiro
+ColonialBrazil/RioDeJaneiro RussianEmpire/SaintPetersburg
+Country ColonialBrazil with capital RioDeJaneiro has been renamed to EmpireOfBrazil
+Country RussianEmpire has capital SaintPetersburg
+Country EmpireOfBrazil with capital RioDeJaneiro has been renamed to UnitedStatesOfBrazil
+Country RussianEmpire has changed its capital from SaintPetersburg to Petrograd
+Country RussianEmpire with capital Petrograd has been renamed to RussianRepublic
+Country RussianRepublic with capital Petrograd has been renamed to USSR
+Country USSR has changed its capital from Petrograd to Moscow
+Country UnitedStatesOfBrazil has changed its capital from RioDeJaneiro to Brasilia
+Country UnitedStatesOfBrazil with capital Brasilia has been renamed to FederativeRepublicOfBrazil
+Country RussianEmpire doesn't exist
+FederativeRepublicOfBrazil/Brasilia USSR/Moscow
+Incorrect rename, skip
+
+    INPUT:
+10
+CHANGE_CAPITAL RussianEmpire Petrograd
+RENAME USSR RussianEmpire
+DUMP
+ABOUT USSR
+DUMP
+RENAME RussianEmpire RussianEmpire
+DUMP
+CHANGE_CAPITAL UnitedStatesOfBrazil Brasilia
+RENAME RussianEmpire UnitedStatesOfBrazil
+DUMP
+
+    OUTPUT:
+Introduce new country RussianEmpire with capital Petrograd
+Incorrect rename, skip
+RussianEmpire/Petrograd
+Country USSR doesn't exist
+RussianEmpire/Petrograd
+Incorrect rename, skip
+RussianEmpire/Petrograd
+Introduce new country UnitedStatesOfBrazil with capital Brasilia
+Incorrect rename, skip
+RussianEmpire/Petrograd UnitedStatesOfBrazil/Brasilia

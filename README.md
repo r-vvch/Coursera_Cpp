@@ -27,7 +27,7 @@
     - Ежемесячные дела - [month_deals](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/vector/month_deals "Перейти к расположению")
 - Контейнер map
     - Анаграммы - [anagrams](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/map/anagrams "Перейти к расположению")
-    - Справочник столиц
+    - Справочник столиц - [capital](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/map/capital "Перейти к расположению")
     - Автобусные остановки 1
     - Автобусные остановки 2
 - Контейнер set
