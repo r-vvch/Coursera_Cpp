@@ -1,3 +1,0 @@
-/home/roman/My/Coursera/Coursera_Cpp/1_week/binary/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/roman/My/Coursera/Coursera_Cpp/1_week/binary/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/roman/My/Coursera/Coursera_Cpp/1_week/binary/cmake-build-debug/CMakeFiles/binary.dir

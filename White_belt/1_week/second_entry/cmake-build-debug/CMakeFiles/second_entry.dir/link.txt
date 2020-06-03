@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/second_entry.dir/main.cpp.o  -o second_entry 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/capital.dir/main.cpp.o  -o capital 
