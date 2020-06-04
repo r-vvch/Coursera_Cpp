@@ -35,3 +35,17 @@
     - Множество значений словаря - [map_values_set](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/map_values_set "Перейти к расположению")
     - Синонимы - [synonyms](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/synonyms "Перейти к расположению")
     - Автобусные остановки 3 - [bus_stops_3](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/bus_stops_3 "Перейти к расположению")
+    
+### 3 неделя:
+- Алгоритмы
+    - Сортировка целых чисел по модулю
+    - Сортировка без учёта регистра
+- Введение в структуры и классы
+    - Отсортированные строки
+    - Имена и фамилии 1
+    - Имена и фамилии 2
+- Конструкторы
+    - Строка
+    - Имена и фамилии 3
+    - Способы инициализации
+
