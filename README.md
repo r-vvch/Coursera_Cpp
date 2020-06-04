@@ -31,7 +31,7 @@
     - Автобусные остановки 1 - [bus_stops_1](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/map/bus_stops_1 "Перейти к расположению")
     - Автобусные остановки 2 - [bus_stops_2](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/map/bus_stops_2 "Перейти к расположению")
 - Контейнер set
-    - Количество уникальных строк
+    - Количество уникальных строк - [unique_strings](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/unique_strings "Перейти к расположению")
     - Множество значений словаря
     - Синонимы
     - Автобусные остановки 3
