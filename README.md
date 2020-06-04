@@ -34,4 +34,4 @@
     - Количество уникальных строк - [unique_strings](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/unique_strings "Перейти к расположению")
     - Множество значений словаря - [map_values_set](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/map_values_set "Перейти к расположению")
     - Синонимы - [synonyms](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/synonyms "Перейти к расположению")
-    - Автобусные остановки 3
+    - Автобусные остановки 3 - [bus_stops_3](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/bus_stops_3 "Перейти к расположению")
