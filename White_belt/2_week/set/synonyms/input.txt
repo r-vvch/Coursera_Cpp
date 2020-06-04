@@ -1,0 +1,16 @@
+8
+ADD program code
+COUNT cipher
+ADD code cipher
+COUNT code
+COUNT program
+CHECK code program
+CHECK program cipher
+CHECK cpp java
+
+0
+2
+1
+YES
+NO
+NO

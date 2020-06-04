@@ -33,5 +33,5 @@
 - Контейнер set
     - Количество уникальных строк - [unique_strings](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/unique_strings "Перейти к расположению")
     - Множество значений словаря - [map_values_set](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/map_values_set "Перейти к расположению")
-    - Синонимы
+    - Синонимы - [synonyms](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/2_week/set/synonyms "Перейти к расположению")
     - Автобусные остановки 3
