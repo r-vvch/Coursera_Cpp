@@ -39,7 +39,7 @@
 ### 3 неделя:
 - Алгоритмы
     - Сортировка целых чисел по модулю - [sort_module](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/algorithms/sort_module/ "Перейти к расположению")
-    - Сортировка без учёта регистра
+    - Сортировка без учёта регистра - [sort_tolower](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/algorithms/sort_tolower/ "Перейти к расположению")
 - Введение в структуры и классы
     - Отсортированные строки
     - Имена и фамилии 1
