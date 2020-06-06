@@ -1,7 +1,5 @@
 #include <iostream>
 #include <map>
-#include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -9,25 +7,15 @@ class Person {
 public:
     void ChangeFirstName(int year, const string& first_name) {
         first_names[year] = first_name;
-        first_name_years.push_back(year);
-        sort(first_name_years.begin(), first_name_years.end());
         // добавить факт изменения имени на first_name в год year
     }
     void ChangeLastName(int year, const string& last_name) {
         last_names[year] = last_name;
-        last_name_years.push_back(year);
-        sort(last_name_years.begin(), last_name_years.end());
         // добавить факт изменения фамилии на last_name в год year
     }
     string GetFullName(int year) {
         string first_name;
         string last_name;
-//        if (year < first_name_years[0]) {
-//            first_name = "unknown";
-//        }
-//        if (year < last_name_years[0]) {
-//            last_name = "unknown";
-//        }
         for (const auto& i : first_names) {
             if (year >= i.first) {
                 first_name = i.second;
@@ -56,8 +44,6 @@ public:
 private:
     map<int, string> first_names;
     map<int, string> last_names;
-    vector<int> first_name_years;
-    vector<int> last_name_years;
     // приватные поля
 };
 
