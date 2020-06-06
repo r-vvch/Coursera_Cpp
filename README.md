@@ -2,8 +2,8 @@
 Репозиторий для курсов по C++ от МФТИ совместно с Яндексом.  
 [🥋️ Специализация на Coursera 🥋️](https://www.coursera.org/specializations/c-plus-plus-modern-development)
 
-
 ## Белый пояс
+[📔️ Конспект](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/conspectus "Перейти к расположению")
 ### 1 неделя:
 - Минимальная строка - [min_string](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/1_week/min_string "Перейти к расположению")
 - Уравнение - [equation](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/1_week/equation "Перейти к расположению")
@@ -50,4 +50,5 @@
     - Строка
     - Имена и фамилии 3
     - Способы инициализации
+    
 
