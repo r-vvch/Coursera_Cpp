@@ -43,7 +43,7 @@
     - Сортировка целых чисел по модулю - [sort_module](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/algorithms/sort_module/ "Перейти к расположению")
     - Сортировка без учёта регистра - [sort_tolower](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/algorithms/sort_tolower/ "Перейти к расположению")
 - Введение в структуры и классы
-    - Отсортированные строки
+    - Отсортированные строки - [sorted_strings](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/struct_class/sorted_strings/ "Перейти к расположению")
     - Имена и фамилии 1
     - Имена и фамилии 2
 - Конструкторы
