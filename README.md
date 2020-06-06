@@ -44,7 +44,7 @@
     - Сортировка без учёта регистра - [sort_tolower](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/algorithms/sort_tolower/ "Перейти к расположению")
 - Введение в структуры и классы
     - Отсортированные строки - [sorted_strings](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/struct_class/sorted_strings/ "Перейти к расположению")
-    - Имена и фамилии 1
+    - Имена и фамилии 1 - [name_surname_1](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/struct_class/name_surname_1/ "Перейти к расположению")
     - Имена и фамилии 2
 - Конструкторы
     - Строка
