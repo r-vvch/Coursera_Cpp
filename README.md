@@ -49,6 +49,6 @@
 - Конструкторы
     - Строка - [string](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/constructors/string/ "Перейти к расположению")
     - Имена и фамилии 3 - [name_surname_3](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/constructors/name_surname_3/ "Перейти к расположению")
-    - Способы инициализации
+    - Способы инициализации - [init_methods](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/constructors/init_methods/ "Перейти к расположению")
     
 
