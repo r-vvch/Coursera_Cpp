@@ -47,7 +47,7 @@
     - Имена и фамилии 1 - [name_surname_1](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/struct_class/name_surname_1/ "Перейти к расположению")
     - Имена и фамилии 2 - [name_surname_2](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/struct_class/name_surname_2/ "Перейти к расположению")
 - Конструкторы
-    - Строка
+    - Строка - [string](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/constructors/string/ "Перейти к расположению")
     - Имена и фамилии 3
     - Способы инициализации
     
