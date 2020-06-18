@@ -53,4 +53,8 @@
 - Деструкторы
     - Файлы для теста по деструкторам - [test](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/3_week/destructors/test/ "Перейти к расположению")
     
+### 4 неделя:
+- Структуры и классы: примеры
+    - Структура LectureTitle - [lecture_title](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/struct_class_exmpl/lecture_title "Перейти к расположению")
+    
 
