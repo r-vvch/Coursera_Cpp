@@ -56,5 +56,5 @@
 ### 4 неделя:
 - Структуры и классы: примеры
     - Структура LectureTitle - [lecture_title](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/struct_class_exmpl/lecture_title "Перейти к расположению")
-    
+    - Обратимая функция - [invertible_function](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/struct_class_exmpl/invertible_funcion "Перейти к расположению")
 
