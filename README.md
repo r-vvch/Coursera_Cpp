@@ -61,7 +61,7 @@
 - Работа с текстовыми файлами и потоками
     -  Работа с файлами — [files](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/files_streams/files/ "Перейти к расположению")
     -  Вывод с точностью — [precision](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/files_streams/precision/ "Перейти к расположению")
-    -  Чтение и вывод таблицы
+    -  Чтение и вывод таблицы — [table](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/files_streams/table/ "Перейти к расположению")
     -  Список студентов
 - Выполнение операций «естественным» образом
     -  Класс Rational
