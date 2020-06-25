@@ -59,7 +59,7 @@
     -  Обратимая функция — [invertible_function](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/struct_class_exmpl/invertible_funcion "Перейти к расположению")
     -  Обратимая функция с умножением и делением — [invertible_function_mul_div](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/struct_class_exmpl/invertible_function_mul_div "Перейти к расположению")
 - Работа с текстовыми файлами и потоками
-    -  Работа с файлами
+    -  Работа с файлами — [files](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/files_streams/files/ "Перейти к расположению")
     -  Вывод с точностью
     -  Чтение и вывод таблицы
     -  Список студентов
