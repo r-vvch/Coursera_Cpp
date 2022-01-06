@@ -64,7 +64,7 @@
     -  Чтение и вывод таблицы — [table](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/files_streams/table/ "Перейти к расположению")
     -  Список студентов — [students_list](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/files_streams/students_list/ "Перейти к расположению")
 - Выполнение операций «естественным» образом
-    -  Класс Rational
+    -  Класс Rational — [class_Rational](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/natural_operations/class_Rational/ "Перейти к расположению")
 - Исключения
     -  Функция EnsureEqual
     -  Исключения в классе Rational
