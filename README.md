@@ -69,5 +69,5 @@
     -  Функция EnsureEqual — [ensure_equal](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/exceptions/ensure_equal/ "Перейти к расположению")
     -  Исключения в классе Rational — [rational_throw](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/exceptions/rational_throw/ "Перейти к расположению")
     -  Калькулятор обыкновенных дробей — [rational_calc](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/exceptions/rational_calc/ "Перейти к расположению")
-    -  Работа с сервером времени
+    -  Работа с сервером времени — [time_server](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/exceptions/time_server/ "Перейти к расположению")
 
