@@ -66,8 +66,8 @@
 - Выполнение операций «естественным» образом
     -  Класс Rational — [class_Rational](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/natural_operations/class_Rational/ "Перейти к расположению")
 - Исключения
-    -  Функция EnsureEqual
-    -  Исключения в классе Rational
+    -  Функция EnsureEqual — [ensure_equal](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/exceptions/ensure_equal/ "Перейти к расположению")
+    -  Исключения в классе Rational — [rational_throw](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/exceptions/rational_throw/ "Перейти к расположению")
     -  Калькулятор обыкновенных дробей
     -  Работа с сервером времени
 
