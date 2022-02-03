@@ -8,7 +8,7 @@ using namespace std;
 class Date {
 public:
     Date(const string& s) {
-        size_t i = 0;
+        int i = 0;
         try {
             while (s[i] != '-') {
                 i++;
@@ -20,9 +20,17 @@ public:
                 i++;
             }
             month = stoi(s.substr(pos, i - pos));
+            if (month < 1 || month > 12) {
+                throw range_error("Month value is invalid: " + to_string(month) + "\n");
+            }
             day = stoi(s.substr(i + 1, s.length() - i - 1));
+            if (day < 1 || day > 31) {
+                throw range_error("Day value is invalid: " + to_string(month) + "\n");
+            }
+        } catch (runtime_error& e) {
+            cout << e.what();
         } catch (exception& e) {
-            cout << "Wrong date format:" + s;
+            cout << "Wrong date format: " + s + "\n";
         }
     }
     int GetYear() const {
@@ -121,14 +129,14 @@ int main() {
 
     string command;
     while (getline(cin, command)) {
-        // Считайте команды с потока ввода и обработайте каждую
         string token = command.substr(0, command.find(' '));
         string command_rest = command.substr(command.find(' ') + 1, command.length() - command.find(' '));
         if (token == "Add") {
             string date = command_rest.substr(0, command_rest.find(' '));
             string event = command_rest.substr(command_rest.find(' ') + 1,
                                                command_rest.length() - command_rest.find(' ') - 1);
-            db.AddEvent(Date(date), event);
+            Date date_date = Date(date);
+            db.AddEvent(date_date, event);
         } else if (token == "Del") {
             if (command_rest.find(' ') == string::npos) {
                 db.DeleteDate(Date(command_rest));
@@ -143,8 +151,8 @@ int main() {
             db.Find(Date(command_rest));
         } else if (token == "Print") {
             db.Print();
-        } else {
-            // ERROR
+        } else if (!token.empty()) {
+            cout << "Unknown command: " + command + "\n";
         }
     }
 
