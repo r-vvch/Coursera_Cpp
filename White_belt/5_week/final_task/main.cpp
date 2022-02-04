@@ -7,8 +7,8 @@ using namespace std;
 
 bool is_number(const std::string& s)
 {
-    std::string::const_iterator it = s.begin();
-    while (it != s.end() && std::isdigit(*it)) ++it;
+    string::const_iterator it = s.begin();
+    while (it != s.end() && isdigit(*it)) ++it;
     return !s.empty() && it == s.end();
 }
 
@@ -16,39 +16,33 @@ class Date {
 public:
     Date(const string& s) {
         int i = 0;
-        try {
+        int hyphens[2] = {-1, -1};
+        for (int j = 0; j < 2; j++) {
             while (s[i] != '-') {
                 i++;
+                if (i == s.length()) {
+                    throw range_error("Wrong date format: " + s + "\n");
+                }
             }
-            if (!is_number(s.substr(0, i))) {
-                throw range_error("Wrong date format: " + s + "\n");
-            }
-            year = stoi(s.substr(0, i));
+            hyphens[j] = i;
             i++;
-            int pos = i;
-            while (s[i] != '-') {
-                i++;
-            }
-            if (!is_number(s.substr(pos, i - pos))) {
-                throw range_error("Wrong date format: " + s + "\n");
-            }
-            month = stoi(s.substr(pos, i - pos));
-            if (month < 1 || month > 12) {
-                throw range_error("Month value is invalid: " + to_string(month) + "\n");
-            }
-            if (!is_number(s.substr(i + 1, s.length() - i - 1))) {
-                throw range_error("Wrong date format: " + s + "\n");
-            }
-            day = stoi(s.substr(i + 1, s.length() - i - 1));
-            if (day < 1 || day > 31) {
-                throw range_error("Day value is invalid: " + to_string(month) + "\n");
-            }
-        } catch (runtime_error& e) {
-            cout << e.what();
         }
-//        } catch (exception& e) {
-//            cout << "Wrong date format: " + s + "\n";
-//        }
+
+        if (!is_number(s.substr(0, hyphens[0])) ||
+            !is_number(s.substr(hyphens[0] + 1, hyphens[1] - hyphens[0] - 1)) ||
+            !is_number(s.substr(hyphens[1] + 1, s.length() - hyphens[1] - 1))) {
+            throw range_error("Wrong date format: " + s + "\n");
+        }
+
+        year = stoi(s.substr(0, hyphens[0]));
+        month = stoi(s.substr(hyphens[0] + 1, hyphens[1] - hyphens[0] - 1));
+        if (month < 1 || month > 12) {
+            throw range_error("Month value is invalid: " + to_string(month) + "\n");
+        }
+        day = stoi(s.substr(hyphens[1] + 1, s.length() - hyphens[1] - 1));
+        if (day < 1 || day > 31) {
+            throw range_error("Day value is invalid: " + to_string(day) + "\n");
+        }
     }
     int GetYear() const {
         return year;
@@ -69,7 +63,7 @@ private:
 bool operator<(const Date& lhs, const Date& rhs) {
     if (lhs.GetYear() == rhs.GetYear()) {
         if (lhs.GetMonth() == rhs.GetMonth()) {
-            return lhs.GetDay() < lhs.GetDay();
+            return lhs.GetDay() < rhs.GetDay();
         } else {
             return lhs.GetMonth() < rhs.GetMonth();
         }
@@ -118,8 +112,8 @@ public:
     }
 
     set<string> Find(const Date& date) const {
-        for (const auto& i : events.at(date)) {
-            cout << i << "\n";
+        for(const string& str: events.at(date)) {
+            cout << str << '\n';
         }
         return events.at(date);
     }
@@ -144,30 +138,35 @@ int main() {
 
     string command;
     while (getline(cin, command)) {
-        string token = command.substr(0, command.find(' '));
-        string command_rest = command.substr(command.find(' ') + 1, command.length() - command.find(' '));
-        if (token == "Add") {
-            string date = command_rest.substr(0, command_rest.find(' '));
-            string event = command_rest.substr(command_rest.find(' ') + 1,
-                                               command_rest.length() - command_rest.find(' ') - 1);
-            Date date_date = Date(date);
-            db.AddEvent(date_date, event);
-        } else if (token == "Del") {
-            if (command_rest.find(' ') == string::npos) {
-                db.DeleteDate(Date(command_rest));
-            } else {
+        try {
+            string token = command.substr(0, command.find(' '));
+            string command_rest = command.substr(command.find(' ') + 1, command.length() - command.find(' '));
+            if (token == "Add") {
                 string date = command_rest.substr(0, command_rest.find(' '));
                 string event = command_rest.substr(command_rest.find(' ') + 1,
                                                    command_rest.length() - command_rest.find(' ') - 1);
                 Date date_date = Date(date);
-                db.DeleteEvent(date_date, event);
+                db.AddEvent(date_date, event);
+            } else if (token == "Del") {
+                if (command_rest.find(' ') == string::npos) {
+                    db.DeleteDate(Date(command_rest));
+                } else {
+                    string date = command_rest.substr(0, command_rest.find(' '));
+                    string event = command_rest.substr(command_rest.find(' ') + 1,
+                                                       command_rest.length() - command_rest.find(' ') - 1);
+                    Date date_date = Date(date);
+                    db.DeleteEvent(date_date, event);
+                }
+            } else if (token == "Find") {
+                db.Find(Date(command_rest));
+            } else if (token == "Print") {
+                db.Print();
+            } else if (!token.empty()) {
+                cout << "Unknown command: " + token + "\n";
             }
-        } else if (token == "Find") {
-            db.Find(Date(command_rest));
-        } else if (token == "Print") {
-            db.Print();
-        } else if (!token.empty()) {
-            cout << "Unknown command: " + command + "\n";
+        } catch (runtime_error& e) {
+            cout << e.what();
+        } catch (exception& e) {
         }
     }
 

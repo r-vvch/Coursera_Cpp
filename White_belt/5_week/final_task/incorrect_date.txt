@@ -6,4 +6,7 @@ Add 1--1-1 event5
 Add 1---1-1 event6
 Add 1-+1-+1 event7
 Add 0-1-2+ event8
+Add 1 1 1 event9
+Add 1-31- event10
+
 Print
