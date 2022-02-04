@@ -5,6 +5,13 @@
 
 using namespace std;
 
+bool is_number(const std::string& s)
+{
+    std::string::const_iterator it = s.begin();
+    while (it != s.end() && std::isdigit(*it)) ++it;
+    return !s.empty() && it == s.end();
+}
+
 class Date {
 public:
     Date(const string& s) {
@@ -13,15 +20,24 @@ public:
             while (s[i] != '-') {
                 i++;
             }
+            if (!is_number(s.substr(0, i))) {
+                throw range_error("Wrong date format: " + s + "\n");
+            }
             year = stoi(s.substr(0, i));
             i++;
             int pos = i;
             while (s[i] != '-') {
                 i++;
             }
+            if (!is_number(s.substr(pos, i - pos))) {
+                throw range_error("Wrong date format: " + s + "\n");
+            }
             month = stoi(s.substr(pos, i - pos));
             if (month < 1 || month > 12) {
                 throw range_error("Month value is invalid: " + to_string(month) + "\n");
+            }
+            if (!is_number(s.substr(i + 1, s.length() - i - 1))) {
+                throw range_error("Wrong date format: " + s + "\n");
             }
             day = stoi(s.substr(i + 1, s.length() - i - 1));
             if (day < 1 || day > 31) {
@@ -29,9 +45,10 @@ public:
             }
         } catch (runtime_error& e) {
             cout << e.what();
-        } catch (exception& e) {
-            cout << "Wrong date format: " + s + "\n";
         }
+//        } catch (exception& e) {
+//            cout << "Wrong date format: " + s + "\n";
+//        }
     }
     int GetYear() const {
         return year;
@@ -102,9 +119,8 @@ public:
 
     set<string> Find(const Date& date) const {
         for (const auto& i : events.at(date)) {
-            cout << i;
+            cout << i << "\n";
         }
-        cout << "\n";
         return events.at(date);
     }
 
@@ -114,10 +130,9 @@ public:
                 cout << setw(4) << setfill('0') << i.first.GetYear() << "-"
                      << setw(2) << setfill('0') << i.first.GetMonth() << "-"
                      << setw(2) << setfill('0') << i.first.GetDay()
-                     << " " << j;
+                     << " " << j << "\n";
             }
         }
-        cout << '\n';
     }
 
 private:

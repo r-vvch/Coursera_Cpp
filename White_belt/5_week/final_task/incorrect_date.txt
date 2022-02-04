@@ -1,7 +1,9 @@
-Add 0-13-32 event01
-Add 0-12-32 event02
-Add 1-1-1 event1
-Add -1-1-1 event2
-Add 1--1-1 event3
-Add 1---1-1 event4
-Add 1-+1-+1 event5
+Add 0-13-32 event1
+Add 0-12-32 event2
+Add 1-1-1 event3
+Add -1-1-1 event4
+Add 1--1-1 event5
+Add 1---1-1 event6
+Add 1-+1-+1 event7
+Add 0-1-2+ event8
+Print

@@ -1,0 +1,13 @@
+Add 0-1-2 event1
+Add 0-1-2 event3
+Add 1-2-3 ev2
+Add 0-1-2 event3
+Add 1-2-3 event4
+Add 1-2-3 eventus1
+Add 2-5-6 event6
+Del 0-1-2 event3
+Add 2-5-6 event7
+Print
+Find 0-1-2
+Add 2-50-61 event8
+Find 1-2-3
