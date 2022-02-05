@@ -71,3 +71,6 @@
     -  Калькулятор обыкновенных дробей — [rational_calc](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/exceptions/rational_calc/ "Перейти к расположению")
     -  Работа с сервером времени — [time_server](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/4_week/exceptions/time_server/ "Перейти к расположению")
 
+### 5 неделя:
+- Финальный проект — [final_task](https://github.com/r-vvch/Coursera_Cpp/tree/master/White_belt/5_week/final_task/ "Перейти к расположению")
+
