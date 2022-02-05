@@ -28,9 +28,13 @@ public:
             i++;
         }
 
-        if (!is_number(s.substr(0, hyphens[0])) ||
-            !is_number(s.substr(hyphens[0] + 1, hyphens[1] - hyphens[0] - 1)) ||
-            !is_number(s.substr(hyphens[1] + 1, s.length() - hyphens[1] - 1))) {
+        if (hyphens[1] + 1 == s.length() || hyphens[0] == 0 ||
+            !(is_number(s.substr(0, hyphens[0])) ||
+                (is_number(s.substr(0, hyphens[0])) && s[0] == '+')) ||
+            !(is_number(s.substr(hyphens[0] + 1, hyphens[1] - hyphens[0] - 1)) ||
+                (is_number(s.substr(hyphens[0] + 2, hyphens[1] - hyphens[0] - 2)) && s[hyphens[0] + 1] == '+')) ||
+            !(is_number(s.substr(hyphens[1] + 1, s.length() - hyphens[1] - 1)) ||
+                (is_number(s.substr(hyphens[1] + 2, s.length() - hyphens[1] - 2)) && s[hyphens[1] + 1] == '+'))) {
             throw range_error("Wrong date format: " + s + "\n");
         }
 
