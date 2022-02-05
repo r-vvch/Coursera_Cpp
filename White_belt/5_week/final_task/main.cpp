@@ -21,7 +21,7 @@ public:
             while (s[i] != '-') {
                 i++;
                 if (i == s.length()) {
-                    throw range_error("Wrong date format: " + s + "\n");
+                    throw range_error("Wrong date format: " + s);
                 }
             }
             hyphens[j] = i;
@@ -35,17 +35,17 @@ public:
                 (is_number(s.substr(hyphens[0] + 2, hyphens[1] - hyphens[0] - 2)) && s[hyphens[0] + 1] == '+')) ||
             !(is_number(s.substr(hyphens[1] + 1, s.length() - hyphens[1] - 1)) ||
                 (is_number(s.substr(hyphens[1] + 2, s.length() - hyphens[1] - 2)) && s[hyphens[1] + 1] == '+'))) {
-            throw range_error("Wrong date format: " + s + "\n");
+            throw range_error("Wrong date format: " + s);
         }
 
         year = stoi(s.substr(0, hyphens[0]));
         month = stoi(s.substr(hyphens[0] + 1, hyphens[1] - hyphens[0] - 1));
         if (month < 1 || month > 12) {
-            throw range_error("Month value is invalid: " + to_string(month) + "\n");
+            throw range_error("Month value is invalid: " + to_string(month));
         }
         day = stoi(s.substr(hyphens[1] + 1, s.length() - hyphens[1] - 1));
         if (day < 1 || day > 31) {
-            throw range_error("Day value is invalid: " + to_string(day) + "\n");
+            throw range_error("Day value is invalid: " + to_string(day));
         }
     }
     int GetYear() const {
@@ -79,47 +79,41 @@ bool operator<(const Date& lhs, const Date& rhs) {
 class Database {
 public:
     void AddEvent(const Date& date, const string& event) {
-        try {
-            events[date].insert(event);
-        } catch (exception& e) {
-            events[date] = {};
-            events[date].insert(event);
-        }
+        events[date].insert(event);
     }
 
     bool DeleteEvent(const Date& date, const string& event) {
-        try {
-            if (events[date].count(event) == 1) {
-                events[date].erase(event);
-                cout << "Deleted successfully\n";
-                return true;
-            } else {
-                cout << "Event not found\n";
-                return false;
-            }
-        } catch (exception& e) {
+        if (events[date].count(event) == 1) {
+            events[date].erase(event);
+            cout << "Deleted successfully\n";
+            return true;
+        } else {
             cout << "Event not found\n";
             return false;
         }
     }
 
     int DeleteDate(const Date& date) {
-        try {
+        if (events.count(date) == 0) {
+            cout << "Deleted 0 events\n";
+            return 0;
+        } else {
             size_t n = events[date].size();
             events.erase(date);
             cout << "Deleted " + to_string(n) + " events\n";
             return int(n);
-        } catch (exception& e) {
-            cout << "Deleted 0 events\n";
-            return 0;
         }
     }
 
     set<string> Find(const Date& date) const {
-        for(const string& str: events.at(date)) {
-            cout << str << '\n';
+        if (events.count(date) > 0) {
+            for (const string& str: events.at(date)) {
+                cout << str << '\n';
+            }
+            return events.at(date);
+        } else {
+            return {};
         }
-        return events.at(date);
     }
 
     void Print() const {
@@ -168,9 +162,8 @@ int main() {
             } else if (!token.empty()) {
                 cout << "Unknown command: " + token + "\n";
             }
-        } catch (runtime_error& e) {
-            cout << e.what();
         } catch (exception& e) {
+            cout << e.what() << "\n";
         }
     }
 
